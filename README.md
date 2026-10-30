@@ -54,7 +54,7 @@ Please check the other file included in this repository. You can download and re
 
 ### DISCLAIMER
 
-AI po 'yan! HAHAHA. Bale, sinend ko yung buong code ko sa AI and asked it to explain the different functions. Need niyo na lang silang i-familiarize, and feel free to ask AI for help kung may parts na hindi ninyo maintindihan.
+AI po 'yan HAHAHA (YUNG DOCX FILE HINDI YUNG MISMONG CODE, KASE PINAGPUYATAN KO PO YAN NG ILANG ARAW PARA MAG WORK LAHAT). Bale, sinend ko yung buong code ko sa AI and asked it to explain the different functions. Need niyo na lang silang i-familiarize, and feel free to ask AI for help kung may parts na hindi ninyo maintindihan.
 
 Pero please, aralin pa rin natin yung buong system. Don't just rely on the explanations. We should understand how the actual code works, especially since this is our final project.
 
