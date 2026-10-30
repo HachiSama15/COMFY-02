@@ -1,32 +1,65 @@
-STUDENT REGISTRATION SYSTEM - FINAL PROJECT 101
+# STUDENT REGISTRATION SYSTEM
+### FINAL PROJECT 101
 
-> PRINT, IF/ELSE TAS LOOPS LANG TO
-> # YUNG MGA MAY HASHTAG NOTE YAN
-MY INFORMATION
-PANO NAG WO-WORK?
-  - ONE BIG WHILE LOOP (MAS BASIC KESA LAGYAN NATIN NG DEFINE FUNCTION)
-  - The variable "screen" says which screen to show: "main", "dashboard" or "edit".
-  - YUNG MGA DATA NAKA SAVE SA: StudsF.csv, StudentsAcc.csv, AT Admin.csv
-   (BALE PAG NI RUN YUNG CODE TSAKA MAG T-TYPE NA KAYO AT NA REGISTER DON PALANG MAGAGAWA 
-   YUNG MGA FILES, OKEH?)
-  - YUNG STARTTING PASSWORD NG MGA STUDENTS IS YUNG KANILA RING STUDENT NUMBER LIKE 26-050030
-  - BALE MAS SIMPLE NA YUNG CSV DITO: read each file once at the start, and every time something
-    changes, save the WHOLE list again (header row first, then every row).
+> **PRINT, IF/ELSE, TAS LOOPS LANG TO!**
+>
+> *Yung mga may hashtag (#) are notes/explanations.*
 
-#CSV = READ AND WRITE CSV FILES (YUNG NAGLALAGAYAN NG MGA DATA)
-#OS = PARANG ANO SYA NAKIKIPAG USAP SYA SA MISMONG SYSTEM: CHECK NIYA IF ANDON BA YUNG 
-MGA NAGAWANG FILES AND MAG C-CLEAR NG SCREEN IF TRUE YUNG COMMAND.
-#RE = REGULAR EXPRESSION. CHECK NIYA IF YUNG NAI INPUT NA STUDENT NUMBER, EMAIL,
-  KEN PHONE KET USTO J PATTERN NA A NAKA DECLARE.
-#input = KASLANG "INPUT(), NGEM ILEMMENG NA EJAY I TTYPE JE USER NGA PASSWORD. KASLANG PRIVACY GANON.
+---
 
-=======READ ME===========
-Check niyo yung isa pang file, download niyo nalang sya baahin niyo
- kung ano andyan para maintindihan niyong Mabuti.
+## MY INFORMATION
 
-Disclaimer: AI po yan, bale sinned ko yung whole na code ko sakanya then 
-pina explain ko yung mga functions. Need niyo nalang silang ifamiliarize and
-magpatulong kayo kay ai kung medyo may di kayo naiintindihan haaa. 
-Tas yung buong system eh aralin niyo. Yon lang, salamat.
+### Paano Nagwo-work?
 
-////jiyan2k26
+- **One Big While Loop** – Mas basic ito kaysa lagyan pa natin ng `def` (function). The entire system runs inside one main `while` loop.
+- **Screen Variable** – The variable `screen` determines which screen to display:
+  - `main` – Main menu
+  - `dashboard` – Student/Admin dashboard
+  - `edit` – Edit personal information
+- **CSV Storage** – All data are saved in three CSV files:
+  - `StudsF.csv`
+  - `StudentsAcc.csv`
+  - `Admin.csv`
+
+  **NOTE:** Hindi agad makikita ang mga CSV files kapag dinownload or ni-run ninyo ang code for the first time. Automatically silang magagawa once the program runs and data are registered or saved. Okeh?
+
+- **Default Student Password** – The initial password of each student is their own Student Number (e.g., `26-050030`).
+
+- **Simplified CSV Handling** – Each CSV file is read once at the start of the program. Whenever there are changes, the entire list of records is saved again, starting with the header row followed by all the data rows.
+
+---
+
+## LIBRARIES USED
+
+### 1. `csv`
+Used for reading and writing CSV files. Dito naka-store yung mga student records, accounts, and admin information.
+
+### 2. `os`
+Parang nakikipag-communicate siya with the operating system. It checks whether the required files exist and clears the terminal screen when needed.
+
+### 3. `re`
+Stands for **Regular Expressions**. Used to validate user inputs based on predefined patterns, such as:
+- Student Numbers
+- Email Addresses
+- Phone Numbers
+
+### 4. `getpass`
+Used instead of the regular `input()` function when entering passwords. This hides the password while the user types, providing an additional layer of privacy.
+
+---
+
+## ======= READ ME =======
+
+Please check the other file included in this repository. You can download and read it to better understand how the system works and how its different functions operate.
+
+### DISCLAIMER
+
+AI po 'yan! HAHAHA. Bale, sinend ko yung buong code ko sa AI and asked it to explain the different functions. Need niyo na lang silang i-familiarize, and feel free to ask AI for help kung may parts na hindi ninyo maintindihan.
+
+Pero please, aralin pa rin natin yung buong system. Don't just rely on the explanations. We should understand how the actual code works, especially since this is our final project.
+
+Yon lang! Salamat.
+
+---
+
+**////jiyan2k26**
